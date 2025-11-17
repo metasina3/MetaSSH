@@ -20,7 +20,7 @@ git init
 
 # Add remote repository
 Write-Host "Adding remote repository..." -ForegroundColor Yellow
-$remoteExists = git remote get-url origin 2>$null
+git remote get-url origin 2>$null | Out-Null
 if ($LASTEXITCODE -ne 0) {
     git remote add origin https://github.com/metasina3/MetaSSH.git
 } else {

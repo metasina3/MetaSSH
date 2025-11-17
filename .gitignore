@@ -41,3 +41,13 @@ Thumbs.db
 # Logs
 *.log
 
+# Node
+node_modules/
+dist/
+dist-electron/
+release/
+*.local
+
+# Electron
+out/
+build/
